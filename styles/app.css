@@ -3,6 +3,9 @@
   --white: #fff;
   --grey: #d2d2d2;
   --dark: #343434;
+  --primary-font: "Roboto", Arial, Helvetica, sans-serif;
+  --primary-font-md: "Roboto Medium", Arial, Helvetica, sans-serif;
+  --secondary-font: "Archivo Black", Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -16,7 +19,7 @@ html {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   line-height: 1.6;
   font-size: 1.6rem;
 }
@@ -28,6 +31,7 @@ __ Reset Class __
  */
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /*
@@ -44,25 +48,23 @@ __ Helper Class __
 
 */
 
-.btn{
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius:10rem;
-  -webkit-border-radius:10rem;
-  -moz-border-radius:10rem;
-  -ms-border-radius:10rem;
-  -o-border-radius:10rem;
-  -webkit-border-radius:10rem;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  -webkit-border-radius: 10rem;
   color: var(--white);
   background-color: var(--dark);
   width: 18rem;
   height: 5rem;
   margin-right: auto;
   margin-left: auto;
-  font-family:"Roboto Medium" ;
-
-
+  font-family: var(--primary-font-md);
 }
 
 /*
@@ -140,37 +142,36 @@ __ App Style __
   -ms-transition: color 100ms ease-in;
   -o-transition: color 100ms ease-in;
 }
-.menu__link:hover{
-    color: var(--white);
+.menu__link:hover {
+  color: var(--white);
 }
-.menu__link--active{
-    color: var(--white);
-    position: relative;
-    z-index: 1;
+.menu__link--active {
+  color: var(--white);
+  position: relative;
+  z-index: 1;
 }
-.menu__link--active::before{
-    content: '';
-    position: absolute;
-    width: 4rem;
-    height: 0.3rem;
-    background-color: var(--orange);
-    border-radius: 10rem;
-    -webkit-border-radius: 10rem;
-    -moz-border-radius: 10rem;
-    -ms-border-radius: 10rem;
-    -o-border-radius: 10rem;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    top: 7px;
-    z-index:-1;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
+.menu__link--active::before {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 0.3rem;
+  background-color: var(--orange);
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  top: 7px;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
 }
-
 
 /* 
 
@@ -193,7 +194,15 @@ __ App Style __
   -ms-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
 }
-
+.nav-menu__title {
+  color: var(--white);
+  font-size: 2rem;
+  font-family: var(--secondary-font);
+  border-bottom: 0.1rem solid var(--white);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
 /* 
 
 ======================
@@ -209,6 +218,29 @@ __ App Style __
 }
 .mobile-menu__link {
   color: var(--white);
+  position: relative;
+  transition: all 150ms ease-in-out;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+}
+.mobile-menu__link::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  margin: auto;
+  height: 0.3rem;
+  background-color: var(--orange);
+}
+.mobile-menu__link:hover {
+  padding-left: 2.2rem;
+}
+.mobile-menu__link:hover::before {
+  width: 1.6rem;
 }
 
 /* 
@@ -228,6 +260,15 @@ __ App Style __
   padding: 1rem;
   flex-grow: 1;
   text-align: center;
+  transition: all 100ms ease-in-out;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+}
+.nav-menu__link:hover {
+  background-color: var(--white);
+  color: var(--dark);
 }
 .nav-menu__link--border {
 }
@@ -243,27 +284,27 @@ __ App Style __
   display: none;
 }
 .nav__link {
-    color: var(--white);
-    font-family: "Roboto Medium";
-    margin-left: 3rem;
+  color: var(--white);
+  font-family: var(--primary-font-md) ;
+  margin-left: 3rem;
 }
-.nav__link--border:hover{
-    background-color: var(--white);
-    color: var(--dark);
+.nav__link--border:hover {
+  background-color: var(--white);
+  color: var(--dark);
 }
 .nav__link--border {
-    border: 1px solid var(--white);
-    padding: 1rem 2.5rem;
-    border-radius: 10rem;
-    -webkit-border-radius: 10rem;
-    -moz-border-radius: 10rem;
-    -ms-border-radius: 10rem;
-    -o-border-radius: 10rem;
-    transition: all 100ms ease-in;
-    -webkit-transition: all 100ms ease-in;
-    -moz-transition: all 100ms ease-in;
-    -ms-transition: all 100ms ease-in;
-    -o-transition: all 100ms ease-in;
+  border: 1px solid var(--white);
+  padding: 1rem 2.5rem;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  transition: all 100ms ease-in;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  -ms-transition: all 100ms ease-in;
+  -o-transition: all 100ms ease-in;
 }
 
 /* 
@@ -349,7 +390,6 @@ __ App Style __
   left: 0;
 }
 
-
 /* 
 
 ======================
@@ -357,30 +397,23 @@ __ App Style __
 ======================
 
 */
-.header__content{
+.header__content {
   text-align: center;
   color: var(--white);
   margin-top: 6rem;
-
 }
-.header-content_title{
-
-  font-family: "Archivo Black";
+.header-content_title {
+  font-family: var(--secondary-font);
   font-size: 4.8rem;
   line-height: 1.2;
   max-width: 35rem;
   margin: 0 auto 3rem auto;
-
-
 }
-.header-content_caption{
+.header-content_caption {
   font-size: 1.8rem;
   max-width: 34rem;
   margin: 0 auto 2rem auto;
-
 }
-.header-content_link{
+.header-content_link {
   background-color: var(--orange);
-
 }
-
