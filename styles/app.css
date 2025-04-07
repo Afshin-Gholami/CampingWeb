@@ -215,7 +215,7 @@ a {
 }
 .nav__btn-line::before,
 .nav__btn-line::after {
-  content: "";
+  content: " ";
   position: absolute;
   width: 3rem;
   border-radius: 2rem;
