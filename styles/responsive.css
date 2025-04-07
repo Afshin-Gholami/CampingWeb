@@ -1,5 +1,5 @@
 
-@media (max-width: 370px) {
+@media (max-width: 380px) {
     .header-content_title{
         font-size: 4.5rem;
 
@@ -12,7 +12,7 @@
 }
 
 @media (min-width: 768px) {
-    .nav__btn{
+    .nav__btn , .nav-menu{
         display: none;
     }
     .menu{
