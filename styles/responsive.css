@@ -1,5 +1,14 @@
 
+@media (max-width: 370px) {
+    .header-content_title{
+        font-size: 4.5rem;
+
+    }
+
+}
+
 @media (min-width: 576px) {
+    
 }
 
 @media (min-width: 768px) {
@@ -14,8 +23,11 @@
 }
 
 @media (min-width: 992px) {
-    .headers__links{
+    .nav__links{
         display: block;
+    }
+    .header-content_caption{
+        min-width: 50rem;
     }
 }
 
