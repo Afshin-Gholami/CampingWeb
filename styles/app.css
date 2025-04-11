@@ -1,4 +1,5 @@
 :root {
+  --app-bg:#FAF4F2;
   --orange: #e76f51;
   --white: #fff;
   --grey: #d2d2d2;
@@ -22,6 +23,7 @@ body {
   font-family: var(--primary-font);
   line-height: 1.6;
   font-size: 1.6rem;
+  background-color: var(--app-bg);
 }
 /*
 
@@ -417,3 +419,73 @@ __ App Style __
 .header-content_link {
   background-color: var(--orange);
 }
+
+
+/* 
+
+======================
+   Main
+======================
+
+*/
+
+.main{
+
+
+}
+
+
+
+/* 
+
+======================
+    services
+======================
+
+*/
+.services{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -20rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+
+}
+.service{
+  background-color: var(--white);
+  margin-bottom: 2rem;
+  height: 26rem;
+  width: 30rem;
+  padding: 0 4rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  color: var(--dark);
+  text-align: center;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+.service__img{
+  display: block;
+
+}
+.service__title{
+  font-family: var(--secondary-font);
+  font-size: 1.8rem;
+  margin: 1.5rem 0 0.6rem 0;
+
+}
+.service__caption{
+
+}
+
+
+   
