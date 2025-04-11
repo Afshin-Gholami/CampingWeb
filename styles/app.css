@@ -60,8 +60,8 @@ __ Helper Class __
   -ms-border-radius: 10rem;
   -o-border-radius: 10rem;
   -webkit-border-radius: 10rem;
-  color: var(--white);
   background-color: var(--dark);
+  color: var(--white);
   width: 18rem;
   height: 5rem;
   margin-right: auto;
@@ -488,4 +488,48 @@ __ App Style __
 }
 
 
-   
+
+/* 
+
+======================
+    destination
+======================
+
+*/
+
+.destinations{
+  text-align: center;
+  padding: 6rem 0;
+
+
+}
+.destination__logo{
+
+}
+.destination__title{
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+  max-width: 36rem;
+  margin: 3rem auto;
+
+}
+.destination__places{
+
+}
+.destinations__btn{
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  background-color: transparent;
+  transition: all 100ms ease-in;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  -ms-transition: all 100ms ease-in;
+  -o-transition: all 100ms ease-in;
+  margin-top: 3rem;
+}
+.destinations__btn:hover{
+  color: var(--white);
+  border: 1px solid var(--orange);
+  background-color: var(--orange);
+
+}
