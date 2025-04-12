@@ -1,7 +1,6 @@
 const $ = document;
 const navBtn = $.querySelector(".nav__btn");
 const navMenu = $.querySelector(".nav-menu");
-const placeLike = $.querySelector(".place__like");
 const placeLikeIcon = $.querySelectorAll(".place__like-icon");
 
 let isLike = false;
@@ -12,12 +11,12 @@ placeLikeIcon.forEach((likeBtn) =>
   likeBtn.addEventListener("click", () => {
 
     if (isLike) {
-      likeBtn.setAttribute("src", "images/svg-icons/heart.svg");
-      isLike = false;
+      likeBtn.src = "images/svg-icons/heart.svg";
     } else {
-      likeBtn.setAttribute("src", "images/svg-icons/heart-red.svg");
-      isLike = true;
+      likeBtn.src = "images/svg-icons/heart-red.svg";
+
     }
+    isLike = !isLike;
   })
 );
 
