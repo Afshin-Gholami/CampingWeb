@@ -1,6 +1,7 @@
 :root {
   --app-bg:#FAF4F2;
-  --orange: #e76f51;
+  --primary-color: #e76f51;
+  --secondary-color: #F8E1DB;
   --white: #fff;
   --grey: #d2d2d2;
   --dark: #343434;
@@ -157,7 +158,7 @@ __ App Style __
   position: absolute;
   width: 4rem;
   height: 0.3rem;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   border-radius: 10rem;
   -webkit-border-radius: 10rem;
   -moz-border-radius: 10rem;
@@ -236,7 +237,7 @@ __ App Style __
   width: 0;
   margin: auto;
   height: 0.3rem;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
 }
 .mobile-menu__link:hover {
   padding-left: 2.2rem;
@@ -335,7 +336,7 @@ __ App Style __
   width: 3rem;
   border-radius: 2rem;
   height: 0.3rem;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
@@ -354,7 +355,7 @@ __ App Style __
   width: 3rem;
   border-radius: 2rem;
   height: 0.3rem;
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
@@ -417,7 +418,7 @@ __ App Style __
   margin: 0 auto 2rem auto;
 }
 .header-content_link {
-  background-color: var(--orange);
+  background-color: var(--primary-color);
 }
 
 
@@ -523,8 +524,8 @@ __ App Style __
 
 }
 .destinations__btn{
-  color: var(--orange);
-  border: 1px solid var(--orange);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   background-color: transparent;
   transition: all 100ms ease-in;
   -webkit-transition: all 100ms ease-in;
@@ -535,7 +536,7 @@ __ App Style __
 }
 .destinations__btn:hover{
   color: var(--app-bg);
-  background-color: var(--orange);
+  background-color: var(--primary-color);
   
 }
 
@@ -620,7 +621,7 @@ __ App Style __
 }
 .place__price-text{
   font-family: var(--primary-font-md);
-  color: var(--orange);
+  color: var(--primary-color);
   text-align: center;
 
 }
@@ -637,5 +638,54 @@ __ App Style __
 .place__link{
   color: #8D8D8D;
   background-color: rgba(141, 141, 141, 10%);
+
+}
+
+/* 
+
+================
+    NewsLetter
+================
+
+*/
+
+.newsletter{
+  background-color: var(--secondary-color);
+  color: var(--dark);
+  text-align: center;
+  padding: 2rem; 
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.newsletter__content{
+
+}
+.newsletter__title{
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+
+}
+.newsletter__caption{
+
+}
+.newsletter__email-box{
+
+}
+.newsletter__email--icon{
+
+}
+.newsletter__input{
+
+}
+.newsletter__submit{
+
+}
+.newsletter__banner{
+
+}
+.newsletter__img{
 
 }
