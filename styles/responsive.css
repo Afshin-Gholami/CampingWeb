@@ -42,6 +42,19 @@
   .newsletter__banner {
     flex-basis: 40%;
   }
+  .newsletter::before{
+    width: auto;
+    height: auto;
+    top: -10rem;
+    left: -25rem;
+    margin-right: 16rem;
+    /* top: -7rem;
+    left: -18rem;
+    margin-right: 38rem; */
+    background-size: cover;
+    background-position: center left;
+
+  }
 }
 
 @media (min-width: 992px) {
@@ -76,6 +89,16 @@
   .footer__scroll {
     left: auto;
   }
+  .newsletter::before{
+    width: auto;
+    height: auto;
+    top: -7rem;
+    left: -18rem;
+    margin-right: 38rem;
+    background-size: cover;
+    background-position: center left;
+
+  }
 }
 
 @media (min-width: 1200px) {
@@ -97,10 +120,16 @@
     margin-bottom: 0;
     margin-left: 2rem;
   }
+  .newsletter::before{
+    margin-right: 46rem;
+  }
 }
 
 @media (min-width: 1400px) {
   .newsletter {
     padding: 3rem 6rem;
+  }
+  .newsletter::before{
+    margin-right: 50rem;
   }
 }
