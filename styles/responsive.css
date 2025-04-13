@@ -1,84 +1,106 @@
-
 @media (max-width: 380px) {
-    .header-content_title{
-        font-size: 4.5rem;
-
-    }
-    .destination__title{
-        font-size: 2.5rem;
-    }
-    .newsletter__title{
-        max-width: 16rem;
-
-    }
-
+  .header-content_title {
+    font-size: 4.5rem;
+  }
+  .destination__title {
+    font-size: 2.5rem;
+  }
+  .newsletter__title {
+    max-width: 16rem;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer__right {
+    justify-content: center;
+  }
+  .footer-list {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 @media (min-width: 576px) {
-    
 }
 
 @media (min-width: 768px) {
-    .nav__btn , .nav-menu{
-        display: none;
-    }
-    .menu{
-        display: flex;
-    }
-    .newsletter{
-        flex-direction: row;
-        text-align: left;
-        align-items: center;
-    }
-    .newsletter__content{
-
-        flex-basis: 60%;
-        padding-right: 2rem;
-    }
-    .newsletter__banner{
-        flex-basis: 40%;
-
-
-    }
-   
-    
+  .nav__btn,
+  .nav-menu {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .newsletter {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+  .newsletter__content {
+    flex-basis: 60%;
+    padding-right: 2rem;
+  }
+  .newsletter__banner {
+    flex-basis: 40%;
+  }
 }
 
 @media (min-width: 992px) {
-    .nav__links{
-        display: block;
-    }
-    .header-content_caption{
-        min-width: 50rem;
-    }
-    .newsletter__content{
-        padding-right: 4rem;
-    }
-    .newsletter__title{
-        margin-bottom: 0;
-    }
-}
+  .nav__links {
+    display: block;
+  }
+  .header-content_caption {
+    min-width: 50rem;
+  }
+  .newsletter__content {
+    padding-right: 4rem;
+  }
+  .newsletter__title {
+    margin-bottom: 0;
+  }
 
+  .footer-app {
+    display: block;
+  }
+
+  .footer-app--mobile {
+    display: none;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__left {
+    max-width: 50rem;
+  }
+  .footer__scroll {
+    left: auto;
+  }
+}
 
 @media (min-width: 1200px) {
-    .newsletter{
-        justify-content: space-between;
-    }
-    .newsletter__content{
-
-        flex-basis: auto;
-        width: 60rem;
-    }
-    .newsletter__banner{
-        flex-basis: auto;
-        width: 42rem;
-    }
-
+  .newsletter {
+    justify-content: space-between;
+  }
+  .newsletter__content {
+    flex-basis: auto;
+    width: 60rem;
+  }
+  .newsletter__banner {
+    flex-basis: auto;
+    width: 42rem;
+  }
+  .footer__wrapper {
+    justify-content: space-between;
+  }
+  .footer-list {
+    margin-bottom: 0;
+    margin-left: 2rem;
+  }
 }
 
-
 @media (min-width: 1400px) {
-
-    .newsletter{
-        padding: 3rem 6rem;
-    }
+  .newsletter {
+    padding: 3rem 6rem;
+  }
 }
