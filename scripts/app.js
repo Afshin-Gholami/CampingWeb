@@ -9,12 +9,10 @@ navBtn.addEventListener("click", menuHandeler);
 navMenu.addEventListener("click", menuHandeler);
 placeLikeIcon.forEach((likeBtn) =>
   likeBtn.addEventListener("click", () => {
-
     if (isLike) {
       likeBtn.src = "images/svg-icons/heart.svg";
     } else {
       likeBtn.src = "images/svg-icons/heart-red.svg";
-
     }
     isLike = !isLike;
   })
