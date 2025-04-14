@@ -192,7 +192,7 @@ __ App Style __
 */
 .nav-menu {
   position: fixed;
-  background-color: var(--dark);
+  background-color: var(--secondary-color);
   left: -25rem;
   top: 0;
   bottom: 0;
@@ -206,7 +206,7 @@ __ App Style __
   z-index: 100;
 }
 .nav-menu__title {
-  color: var(--white);
+  color: var(--dark);
   font-size: 2rem;
   font-family: var(--secondary-font);
   border-bottom: 0.1rem solid var(--white);
@@ -228,7 +228,7 @@ __ App Style __
   margin-bottom: 1rem;
 }
 .mobile-menu__link {
-  color: var(--white);
+  color: var(--dark);
   position: relative;
   transition: all 150ms ease-in-out;
   -webkit-transition: all 150ms ease-in-out;
@@ -265,8 +265,9 @@ __ App Style __
   display: flex;
 }
 .nav-menu__link {
-  color: var(--white);
-  border: 1px solid var(--white);
+  color: var(--dark);
+  border: 1px solid var(--primary-color);
+  margin-left: 1rem;
   display: block;
   padding: 1rem;
   flex-grow: 1;
@@ -276,6 +277,11 @@ __ App Style __
   -moz-transition: all 100ms ease-in-out;
   -ms-transition: all 100ms ease-in-out;
   -o-transition: all 100ms ease-in-out;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
 }
 .nav-menu__link:hover {
   background-color: var(--white);
