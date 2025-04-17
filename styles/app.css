@@ -567,6 +567,7 @@ __ App Style __
 */
 
 .place {
+  display: none;
   background-color: var(--white);
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
@@ -581,6 +582,11 @@ __ App Style __
   margin-right: 1rem;
   margin-left: 1rem;
   overflow: hidden;
+  transition: all 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
 }
 .place__banner {
   position: relative;
